@@ -1,0 +1,165 @@
+/* style.css */
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #caf0f8 0%, #90e0ef 50%, #00b4d8 100%);
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
+  color: #031716;
+  line-height: 1.6;
+  min-height: 100vh;
+  position: relative;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* 3D and Modern Effects */
+section {
+  padding: 30px;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+img:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+}
+
+/* Headers with Transitions */
+h1, h2, h3 {
+  color: #031716;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+h1:hover, h2:hover, h3:hover {
+  color: #00b4d8;
+  transform: scale(1.05);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Navigation - Fixed at Bottom for Modern Mobile-Like Feel */
+nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #031716;
+  padding: 15px 0;
+  text-align: center;
+  box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+nav a {
+  color: #caf0f8;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 15px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  background: #cfa24f;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+nav a:hover {
+  background: #90e0ef;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 180, 216, 0.4);
+}
+
+/* Header Section */
+header {
+  background: rgba(205, 143, 58, 0.8);
+  backdrop-filter: blur(10px);
+  text-align: center;
+  padding: 20px;
+  border-bottom: 3px solid #cf9a36;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 999;
+}
+
+header h1 {
+  color: #caf0f8;
+  margin-bottom: 10px;
+}
+
+/* Intro and Text */
+.intro-text, p {
+  font-size: 18px;
+  margin: 20px 0;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+  text-align: left;
+  display: inline-block;
+  margin-top: 15px;
+  
+  padding: 20px;
+  border-radius: 12px;
+  
+}
+
+li {
+  margin: 10px 0;
+}
+
+/* Divider */
+.divider {
+  width: 60%;
+  margin: 30px auto;
+  border: none;
+  height: 2px;
+  background: linear-gradient(to right, transparent, #00b4d8, transparent);
+}
+
+/* Hero Image */
+.hero-img img {
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+  display: block;
+}
+
+/* Image Gallery on Home */
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin: 30px 0;
+}
+
+/* Gallery Page Grid */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+  margin
